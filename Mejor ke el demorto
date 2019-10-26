@@ -1,0 +1,21 @@
+pro=int(input("Cuantas veces se va a recorrer"))
+trik=pro
+ret=0
+imp=bool(False)
+y=[7,6,5,4,3,2,1]
+while pro>0:
+    imp=not imp
+    t=0
+    k=[1,2,3,4,5,6,7]
+    while t!=7:
+        if pro<=7:
+            k=pro
+        else:
+            k.pop(0)
+        t+=1
+    pro-=7
+if imp==True:
+    print("La posicion seria", k)
+else:
+    ret=y.pop(k-1)
+    print("La posicion seria", ret)
